@@ -6,24 +6,19 @@ Es el programa base para cifrar usando el algoritmo **blowfish** es necesario te
 
 ## Compilación
 
-Para compilar es necesario disponer del programa make (sudo apt-get install make) y ejecutar:
 
 make
 
 ## Ejecución
 
-./dist/cryptoapp [opcion] [llave] [mensaje] 
+./dist/cryptoapp -v
 
-**[opcion]** puede ser [enc] => cifrar y [dec] => descifrar 
-**[llave]** es una secuencia de caracteres usadas como llave simetrica 
-**[mensaje]** texto a cifrar/descifrar 
+Muestra integrantes del grupo
 
- === Ejemplo para cifrar CIFRADO === 
-./dist/cryptoapp enc asdf "Hola curso..." 
 
- === Ejemplo para cifrar CIFRADO === 
-./dist/cryptoapp dec asdf "37727ac53c8dea90d386ebd2b763eb0b"
+./dist/cryptoapp -f /tmp/prueba.txt
 
+Inicia el programa, y cuando encuentre la clave se creará un .txt en la ruta agregada "/tmp/prueba.txt"
 
 
 
