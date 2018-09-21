@@ -15,8 +15,7 @@ int verificar(char*);
 
 
 
-int main(int argc, char** argv)
-{
+int main(int argc, char** argv){
 
     char* pa = argv[1];
     char* ruta = argv[2];
@@ -24,16 +23,14 @@ int main(int argc, char** argv)
     char* rightStr = "-f";
     char* leftStr = "-v";
     FILE * archivo;
-    if (strcmp(pa,leftStr)==0)
-        {
+    if (strcmp(pa,leftStr)==0){
 	    printf("*******************INTEGRANTES*******************\n");
             printf("Felipe Campos - Eloy Lopez - Rodrigo Muñoz\n");
             printf("**************************************\n");
 	exit(0);
 
         }
-else if (strcmp(pa,rightStr)==0)
-{
+else if (strcmp(pa,rightStr)==0){
     archivo=fopen(ruta,"w");
     MPI_Init(&argc, &argv);
     MPI_Comm_size(MPI_COMM_WORLD, &total_cpus);
@@ -58,20 +55,15 @@ else if (strcmp(pa,rightStr)==0)
     char palabra[6];
 
 
-    for(i=inicio; i<fin; i++)
-    {
+    for(i=inicio; i<fin; i++){
 
-        for(j=0; j<62; j++)
-        {
+        for(j=0; j<62; j++){
 
-            for(k=0; k<62; k++)
-            {
+            for(k=0; k<62; k++){
 
-                for(l=0; l<62; l++)
-                {
+                for(l=0; l<62; l++){
 
-                    for(m=0; m<62; m++)
-                    {
+                    for(m=0; m<62; m++){
                       for (t = 0; t < 62; t++) {
                         free(texto);
                         palabra[0]= diccionario[i];
