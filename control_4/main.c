@@ -28,7 +28,7 @@ int main(int argc, char** argv)
         {
 	    printf("*******************INTEGRANTES*******************\n");
             printf("Felipe Campos - Eloy Lopez - Rodrigo Muñoz\n");
-            printf("**************************************\n");
+            printf("*************************************************\n");
 	exit(0);
 
         }
